@@ -1,0 +1,177 @@
+html, body{
+	font-family: 'Josefin Slab', serif;
+	background: #0d001a url("background.jpg") no-repeat fixed center;
+	background-size: cover;
+	color: #fff; 
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Josefin Slab', serif;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	width:100%;
+    position: fixed;
+    padding: 20px 40px 0 40px;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 40px;
+	 /*width: 530px - when oncklick*/
+	background-color: rgba(204, 204, 204, 0.5);
+	border-radius: 20px;
+}
+
+nav p{
+	display: none; /*inline - when oncklick*/
+	text-shadow: 1px 1px 7px rgb(0, 0, 102);
+	padding: 5px;
+	cursor: pointer;
+}
+
+nav #imgMenu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(128, 128, 128, 0.5);
+	border-radius: 20px;
+}
+
+header .up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(128, 128, 128, 0.5);
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+}
+
+section .welcome{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-shadow: 1px 1px 7px rgb(0, 0, 102);
+}
+
+section .welcome h1{
+	font-size: 60px;
+}
+
+section .profilePic{
+	width: 200px;
+	height: 200px;
+	background: url("profilePhoto.jpg") no-repeat;
+	background-size:  200px;
+	border: 2px solid #fff;
+	box-shadow: 3px 3px 7px rgb(128, 128, 128),
+				inset 3px 3px 7px rgb(128, 128, 128);
+	border-radius: 50%;
+	margin: 30px;
+}
+
+section .skills_info,
+section .education_info,
+section .experience_info,
+section .aboutMe_info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(51, 0, 102, 0.3);
+	padding-bottom: 50px;
+	height: 100vh;
+}
+
+section .experience_info,
+section .aboutMe_info{
+	background-color:rgba(0, 204, 160, 0.3);
+}
+
+.w3-row-padding{
+	width: 80%;
+	max-height: 500px;
+}
+
+.w3-card-2{
+	background-color: rgba(204, 204, 204, 0.2);
+}
+
+
+.university, .courses, .languages{
+	height: 300px;
+}
+
+.university{
+	font-size: 20px;
+}
+.courses{
+	margin-top: 80px;
+	font-size: 25px;
+}
+.languages{
+	margin-top: 160px;
+	font-size: 25px;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	padding: 12px;
+}
+
+footer .contacts{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
+footer i,
+footer a{
+	cursor: pointer;
+	padding: 10px;
+}
+
+footer a{
+	display: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
