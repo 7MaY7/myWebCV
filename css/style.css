@@ -7,6 +7,8 @@ html, body{
 
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Josefin Slab', serif;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 header{
@@ -114,7 +116,7 @@ section .aboutMe_info{
 }
 
 .university{
-	font-size: 20px;
+	font-size: 18px;
 }
 .courses{
 	margin-top: 80px;
