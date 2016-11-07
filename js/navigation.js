@@ -35,8 +35,8 @@ $(document).ready(function(){
 						parName = ".experience_info";
 					}else if (par === "education_nav") {
 						parName = ".education_info";
-					}else if (par === "aboutMe_nav"){
-						parName = ".aboutMe_info";
+					}else if (par === "hobbies_nav"){
+						parName = ".hobbies_info";
 					}else{
 						parName = "footer";
 					}
