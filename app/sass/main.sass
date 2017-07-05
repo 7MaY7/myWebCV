@@ -1,0 +1,178 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	background: #0d001a url("../img/background.jpg") repeat fixed center
+	background-size: cover
+	color: #fff 
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+a
+	color: #fff
+	padding-left: 5px 
+
+a:hover 
+	color: hotpink
+
+//////////////
+//NAVIGATION//
+//////////////
+
+.navbar
+	background-color: rgba(77, 77, 77, 0.0)
+	border: none
+	.container-fluid
+		display: flex
+		justify-content: center
+		text-align: center
+		letter-spacing: 1px
+		.navbar-nav li
+			display: inline-block
+			a
+				color: #fff
+				&:hover
+					color: hotpink
+
+////////////
+///TITLE////
+////////////
+section 
+	.titlePage
+		height: 100vh
+		text-shadow: 1px 1px 7px rgb(0, 0, 102)
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.photo
+			width: 200px
+			height: 200px
+			box-shadow: inset 4px 4px 4px gray
+			border: 2px solid white
+			border-radius: 50% 
+			background-image: url('../img/profilePhoto.jpg')
+			background-size: cover
+			background-position: center
+
+/*////////////
+//ALL SKILLS//
+////////////*/
+section
+	.skillsBackground,
+	.educationBackground
+		padding-bottom: 20px
+		height: 100%
+		min-height: 100vh
+		background-color: rgba(51, 0, 102, 0.3)
+
+	.experienceBackground,
+	.hobbiesBackground
+		padding-bottom: 50px
+		height: 100%
+		min-height: 75vh
+		background-color:rgba(0, 204, 160, 0.3)
+
+	.skills_info, .education_info, .experience_info, .hobbies_info
+		display: flex
+		flex-direction: column
+		align-items: center
+
+////////////
+/* SKILLS */
+////////////
+.skill
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 80%
+	margin-bottom: 10px
+	.skillCont
+		margin-left: 20px
+		flex-flow: column wrap
+		width: 65%
+		.skillName
+			display: flex
+			justify-content: space-between 
+			align-items: baseline
+			h4, p
+				font-weight: bold
+				margin-bottom: 2px
+		.gradBack
+			background-color: #808080
+			width: 100%
+			border-radius: 5px
+
+	.gradJs,
+	.gradHtml,
+	.gradCss,
+	.gradJquery,
+	.gradBootstrap,
+	.gradAngular,
+	.gradSass
+		background: linear-gradient(to right, #8533ff, #00ffcc)
+		height: 7px
+		border-radius: 5px
+		width: 0%
+
+
+.projects
+	display: flex
+	flex-wrap: wrap
+
+.workExperience
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+.university, .courses, .languages
+	display: flex
+	flex-direction: column
+	align-items: center
+
+footer
+	display: flex
+	justify-content: space-between
+	align-items: center
+	font-size: 13px
+	padding: 0 10% 0 10%
+	background-color: rgba(51, 51, 51, 0.5)
+
+footer ul
+	list-style: none
+
+
+
+@import "media" // Всегда в конце
